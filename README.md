@@ -1496,8 +1496,9 @@ It will synthesise filenames using a combination of radio show name, date (when 
 * jpqs-NA-pasado lunes-Horace Silver (1928-2014).mp3
 
 ### Caveats
-For the sake of simplicity, the cleanup of temporary files (*.tmp) must be performed manually.
-The script is idempotent in that it will not download files already on disk based on their filenames, no checksumming is performed
+* For the sake of simplicity, the cleanup of temporary files (*.tmp) must be performed manually.
+* The script is idempotent in that it will not download files already on disk based on their filenames, no checksumming is performed
+* The script is not flushing podcasts to disk in chunks, it'll fit it all in RAM
 
 ### Acknowledgments
 * Juan Claudio "Cifu" Cifuentes (Paris, 1941 - Madrid, 2015). Love and respect. Rest in Peace.
